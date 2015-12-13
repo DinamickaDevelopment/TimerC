@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background: url(../numbers/bg.png) no-repeat;
+    width: 1200px;
+    margin: 50px auto;
+
+    // background-color: rgba(235, 148, 19,0.3);
+    height: 750px;
+    position: relative;
+}
+.clock {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 400px;
+    margin: 0 auto;
+    height: 100px;
+    border-radius: 10px;
+    // box-shadow: inset 0 0 20px rgba(186, 51, 145, 0.5);
+    // background-color: rgba(186, 51, 145, 0.2);
+    text-align: center;
+    line-height: 100px;
+    p {
+        font-size: 1.3em;
+    }
+}
+.place {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%,0);
+    z-index: 5;
+    width: 1000px;
+    height: 100px;
+    // background-color: rgba(162, 96, 221,0.2);
+}
+ul.num {
+    list-style: none;
+    li {
+        display: inline-block;
+        position: absolute;
+
+
+    }
+}
+.hide{
+    display: none;
+}
+.active{
+    display: block;
+}
+._sec2{
+    li{
+        left: 90%;
+    }
+}
+._sec1{
+    li{
+        left:80%;
+    }
+}
+._min2{
+    li{
+        left:70%;
+    }
+}
+._min1{
+    li{
+        left: 60%;
+    }
+}
+._hour1{
+    li{
+        left: 40%;
+    }
+}
+._hour2{
+    li{
+        left: 50%;
+    }
+}
+._day1{
+    li{
+        left:20%;
+    }
+}
+._day2{
+    li{
+        left: 30%;
+    }
+}
