@@ -30,11 +30,13 @@ body{
 }
 ul.num {
     list-style: none;
+    padding: 0;
 
     li {
         display: inline-block;
         position: absolute;
-        // width: 36px;
+        width: 36px;
+
     }
 }
 .hide{
@@ -62,7 +64,7 @@ ul.num {
     font-size: 2.4em;
     position: absolute;
     bottom: -100%;
-    left: 50%;
+    left: 53%;
     transform: translate(-50%,0);
     color: #f1d3a9;
 }
@@ -76,18 +78,17 @@ input[type=submit]{
     padding: 0;
     position: absolute;
     bottom: -139px;
-    right: 60%;
     font-family: 'Playfair Display';
 }
 .email{
-    width: 338px;
+    width: 100%;
     height: 50px;
     position: absolute;
     font-family: 'Playfair Display';
     font-size: 1.2em;
     bottom: -120px;
-    left: 20%;
-    transform: translate(0,0);
+    padding: 0;
+
 }
 .icon{
     margin-top: 5%;
@@ -200,12 +201,7 @@ svg.twitter {
             margin-left: 18%;
         }
     }
-    .container{
-        .place{
-            margin-top:0%;
-            margin-left: 1.5%;
-        }
-    }
+
     li{
         img{
             transform: scale(0.4);
@@ -220,11 +216,11 @@ svg.twitter {
         padding-left: 11%;
     }
     .email{
-        width: 145%;
+        width: 90%;
         position: absolute;
         padding: 0;
         bottom: -75px;
-        left: 52.5%;
+        left: 53%;
         transform: translate(-50%,0);
         text-align: center;
     }
@@ -253,14 +249,14 @@ svg.twitter {
         }
         .email{
             bottom: -80px;
-            left: 107.5px;
+            left: 54%;
         }
         input[type=submit]{
             bottom: -135px;
         }
       }
 
- @media all and (min-width: 460px) and (max-width:602px){
+ @media all and (min-width: 460px) and (max-width:599px){
      .pare{
          p{
              margin-top: 90%;
@@ -270,21 +266,71 @@ svg.twitter {
      img{
          transform: scale(0.50) !important;
      }
-     .place{
-         margin-left: 5% !important;
-
+     .first_num{
+         margin-left: 3%;
      }
      .info{
          font-size: 2em;
          bottom: -68%;
-         padding-left: 1%;
      }
      .email{
          bottom: -110px;
-         left: 48%;
+         left: 53%;
      }
      input[type=submit]{
-         left: 135px;
+        //  left: 135px;
          bottom: -172px;
      }
  }
+
+@media all and (min-width:600px) and (max-width:767px){
+    body{
+        background-position: 60% 0%;
+    }
+    .place{
+        top:67%;
+    }
+    img{
+        transform: scale(0.55);
+        margin-right: 20px;
+    }
+    .first_num{
+        margin-left: 2%;
+    }
+    .pare{
+        p{
+        margin-top: 130%;
+        }
+    }
+    .sm_nexus{
+        width: 90%;
+        left:50.5%;
+        transform: translate(-50%,0);
+    }
+    .email{
+        bottom: -95px;
+        text-align: center;
+    }
+    input[type=submit]{
+        left: 53%;
+        transform: translate(-50%,0);
+        bottom: -150px;
+    }
+}
+@media all and (min-width:768px) and (max-width:1350px) {
+    body{
+        background-position: 60% 0;
+    }
+    .place{
+        top:67%;
+        p{
+            margin-top: 90%;
+        }
+        img{
+            transform: scale(0.6);
+        }
+    }
+    .first_num{
+        margin-left: 3%;
+    }
+}
