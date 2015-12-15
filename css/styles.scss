@@ -8,13 +8,13 @@ body{
     overflow: hidden;
     background-position: 60% 40%;
     height: 680px;
+    position: relative;
 }
 .fullHeight{
     height: 100%;
 }
 .container {
     padding: 0;
-    height: 100%;
     position: relative;
 }
 .place {
@@ -34,6 +34,7 @@ ul.num {
     li {
         display: inline-block;
         position: absolute;
+        // width: 36px;
     }
 }
 .hide{
@@ -53,19 +54,17 @@ ul.num {
 
     }
 }
-.ico{
-    margin-top: 1.2%;
-}
+
 .info{
     text-align: center;
     font-family: 'Playfair Display';
     font-weight:400;
     font-size: 2.4em;
-    margin-top: 4%;
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translate(-50%,0);
     color: #f1d3a9;
-}
-.input{
-    margin-top: 4%;
 }
 input[type=submit]{
     background-color:#ff703f;
@@ -75,16 +74,112 @@ input[type=submit]{
     border-radius: 0;
     border: 1px solid #ff703f;
     padding: 0;
-    margin-left: -30%;
+    position: absolute;
+    bottom: -139px;
+    right: 60%;
     font-family: 'Playfair Display';
 }
 .email{
     width: 338px;
     height: 50px;
-    margin-left: 27%;
+    position: absolute;
     font-family: 'Playfair Display';
     font-size: 1.2em;
+    bottom: -120px;
+    left: 20%;
+    transform: translate(0,0);
 }
+.icon{
+    margin-top: 5%;
+}
+.tweet {
+    display: block;
+    width: 50px;
+    height: 50px;
+    // margin-top:6px;
+    position: absolute;
+    right: 0;
+     border: 2px solid transparent;
+     border-radius:100%;
+
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    text-decoration: none;
+
+}
+
+svg.twitter {
+
+    display:block;
+    position:relative;
+    margin:-15px auto 0 auto;
+
+    top:50%;
+
+}
+    .tweet:hover, .tweet:active, .tweet:focus {
+
+        text-decoration: none;
+        outline: none;
+    }
+
+    .tweet:hover {
+        -moz-transform: rotate(-360deg) scale(1.1);
+         -ms-transform: rotate(-360deg) scale(1.1);
+         -o-transform: rotate(-360deg) scale(1.1);
+         -webkit-transform: rotate(-360deg) scale(1.1);
+          transform: rotate(-360deg) scale(1.1);
+        border: 2px solid #f1d3b9;
+        border-radius: 100%;
+
+        background-color: rgba(255,255,255,1);
+
+    }
+
+.tweet:hover path {
+
+    fill:#f1d3a9;
+
+}
+/*-----------------logo--------------*/
+        .card {
+
+            cursor:pointer;
+            position:absolute;
+            top:10%;
+            padding-left: 15px;
+            img{
+                padding-left: 15px;
+            }
+        }
+
+        .back, .front {
+            position: absolute;
+            width: 142px;
+            height: 55px;
+            -moz-transition: all .8s;
+            -o-transition: all .8s;
+            -webkit-transition: all .8s;
+            transition: all .8s;
+        }
+
+.back {
+
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+     background-size: contain;
+}
+
+.front {
+    /*background-image: url('../img/fuse-logos_blue_gray.png');*/
+    background-image: url('../img/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
 
 
                     // Media query
@@ -94,40 +189,101 @@ input[type=submit]{
         width: 100%;
         // height: 100%;
         position: fixed;
-        background-position: 70% 22%;
+        background-position: 60% 22%;
     }
     .pare{
         margin-right: 35px;
         p{
-            margin-top: 113%;
+            margin-top: 120%;
             font-size: 0.8em;
             text-align: right;
+            margin-left: 18%;
         }
     }
     .container{
         .place{
-            margin-top:-15%;
-            margin-left: 2%;
+            margin-top:0%;
+            margin-left: 1.5%;
         }
     }
-
     li{
         img{
-            transform: scale(0.5);
+            transform: scale(0.4);
         }
     }
     .info{
-        font-size: 1.4em;
+        font-size: 1.3em;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,0);
+        bottom: -40%;
+        padding-left: 11%;
     }
     .email{
-        margin-left: -22%;
-        width: 147.5%;
+        width: 145%;
+        position: absolute;
+        padding: 0;
+        bottom: -75px;
+        left: 54%;
+        transform: translate(-50%,0);
+        text-align: center;
     }
     input[type=submit]{
-        margin-left: 30%;
+        position: absolute;
+        left: 54%;
+        bottom: -130px;
+        transform: translate(-50%,0);
     }
-    @viewport {
-  user-zoom: fixed;
-}
+    .tweet{
+        right:3%;
+    }
+    .col-md-6,.col-lg-6,.col-xs-6,.col-md-2,.col-lg-2,.col-xs-2{
+        padding: 0;
+        padding-left: 0;
+        padding-right: 0px;
+    }
 
+ }
+ // HTC
+ @media (min-width: 360px){
+        .pare{
+            p{
+                margin-top: 102%;
+            }
+        }
+        .email{
+            bottom: -80px;
+        }
+        input[type=submit]{
+            bottom: -135px;
+        }
+      }
+
+ @media (min-width: 460px){
+     .pare{
+         p{
+             margin-top: 90%;
+             text-align: center;
+         }
+     }
+     img{
+         transform: scale(0.5) !important;
+     }
+     .place{
+         margin-left: 5% !important;
+
+     }
+     .info{
+         font-size: 2em;
+         bottom: -68%;
+         padding-left: 1%;
+     }
+     .email{
+         bottom: -110px;
+         left: 48%;
+     }
+     input[type=submit]{
+         left: 135px;
+         bottom: -172px;
+     }
  }
