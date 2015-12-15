@@ -121,7 +121,7 @@
 
 
     }
-    $('.clock').find('p').countdown('2016/1/1', function(event) {
+    $('.place').countdown('2016/1/1', function(event) {
         // timeUpSec(event);
         showStart(event);
         check(event);

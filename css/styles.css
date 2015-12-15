@@ -1,36 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700);
 * {
   margin: 0;
   padding: 0; }
 
-.container {
-  background: url(../numbers/bg.png) no-repeat;
-  width: 1200px;
-  margin: 50px auto;
-  height: 750px;
-  position: relative; }
+body {
+  background: url(../img/bg-2.png) no-repeat;
+  overflow: hidden;
+  background-position: 60% 40%;
+  height: 680px; }
 
-.clock {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  width: 400px;
-  margin: 0 auto;
-  height: 100px;
-  border-radius: 10px;
-  text-align: center;
-  line-height: 100px; }
-  .clock p {
-    font-size: 1.3em; }
+.fullHeight {
+  height: 100%; }
+
+.container {
+  padding: 0;
+  height: 100%;
+  position: relative; }
 
 .place {
   position: absolute;
-  top: 87%;
-  left: 50%;
+  top: 37%;
+  left: 47%;
   border-radius: 10px;
   transform: translate(-50%, 0);
   z-index: 5;
-  width: 1000px;
+  width: 100%;
   height: 100px; }
 
 ul.num {
@@ -42,31 +36,81 @@ ul.num {
 .hide {
   display: none; }
 
-.active {
-  display: block; }
+.pare {
+  margin-right: 40px; }
+  .pare p {
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    color: #f1d3a9;
+    font-size: 1.2em;
+    margin-top: 53%;
+    text-transform: uppercase;
+    transform: translate(0, 0); }
 
-._sec2 li {
-  left: 90%; }
+.ico {
+  margin-top: 1.2%; }
 
-._sec1 li {
-  left: 80%; }
+.info {
+  text-align: center;
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: 2.4em;
+  margin-top: 4%;
+  color: #f1d3a9; }
 
-._min2 li {
-  left: 70%; }
+.input {
+  margin-top: 4%; }
 
-._min1 li {
-  left: 60%; }
+input[type=submit] {
+  background-color: #ff703f;
+  text-transform: uppercase;
+  width: 100px;
+  height: 50px;
+  border-radius: 0;
+  border: 1px solid #ff703f;
+  padding: 0;
+  margin-left: -30%;
+  font-family: 'Playfair Display'; }
 
-._hour1 li {
-  left: 40%; }
+.email {
+  width: 338px;
+  height: 50px;
+  margin-left: 27%;
+  font-family: 'Playfair Display';
+  font-size: 1.2em; }
 
-._hour2 li {
-  left: 50%; }
+@media (max-width: 480px) {
+  body {
+    width: 100%;
+    position: fixed;
+    background-position: 70% 22%; }
 
-._day1 li {
-  left: 20%; }
+  .pare {
+    margin-right: 35px; }
+    .pare p {
+      margin-top: 113%;
+      font-size: 0.8em;
+      text-align: right; }
 
-._day2 li {
-  left: 30%; }
+  .container .place {
+    margin-top: -15%;
+    margin-left: 2%; }
+
+  li img {
+    transform: scale(0.5); }
+
+  .info {
+    font-size: 1.4em; }
+
+  .email {
+    margin-left: -22%;
+    width: 147.5%; }
+
+  input[type=submit] {
+    margin-left: 30%; }
+
+  @viewport {
+    user-zoom: fixed; } }
 
 /*# sourceMappingURL=styles.css.map */
