@@ -1,5 +1,6 @@
 (function() {
     'use strict';
+
     var sec,min,hour,day,
         _countMin1,
         _countMin2,
@@ -35,7 +36,9 @@
     }
     function showStart(event) {
         if ($('ul').hasClass("hide")) {
+            setTimeout(function(){
             getData(event);
+
             console.log(day+' days '+hour+' hours '+min+' min '+sec +' sec');
 
             // work with seconds
@@ -66,7 +69,9 @@
             len = eq.length-1;
             $('ul').removeClass('hide');
             // return eq;
+        },500);
         }
+
     }
     function getData(event){
         sec = event.offset.seconds;
@@ -83,6 +88,7 @@
         _countD1 = (day - _countD2)/10;
     }
     function check(event){
+        if (!$('ul').hasClass("hide")){
         getData(event);
         // work with sec1
         if(_countSec2 != eq[len]){
@@ -116,6 +122,7 @@
         if(_countD1 != eq[len-7]){
             $_day1.find('li').fadeOut().eq(_countD1).fadeIn();
             eq[len-7] = _countD1;
+        }
         }
 
 
