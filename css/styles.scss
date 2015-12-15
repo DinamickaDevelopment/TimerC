@@ -184,7 +184,7 @@ svg.twitter {
 
                     // Media query
 
-@media (max-width: 480px) {
+@media all and (max-width: 480px) {
     body{
         width: 100%;
         // height: 100%;
@@ -245,7 +245,7 @@ svg.twitter {
 
  }
  // HTC
- @media (min-width: 360px){
+ @media all and (min-width: 361px) and (max-width:479px){
         .pare{
             p{
                 margin-top: 102%;
@@ -253,13 +253,14 @@ svg.twitter {
         }
         .email{
             bottom: -80px;
+            left: 107.5px;
         }
         input[type=submit]{
             bottom: -135px;
         }
       }
 
- @media (min-width: 460px){
+ @media all and (min-width: 460px) and (max-width:602px){
      .pare{
          p{
              margin-top: 90%;
@@ -267,7 +268,7 @@ svg.twitter {
          }
      }
      img{
-         transform: scale(0.5) !important;
+         transform: scale(0.50) !important;
      }
      .place{
          margin-left: 5% !important;
