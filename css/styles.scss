@@ -3,14 +3,16 @@
     margin: 0;
     padding: 0;
 }
-body{
+body {
     background: url(../img/bg-2.png) no-repeat;
+    background-attachment: fixed;
     overflow: hidden;
     background-position: 60% 40%;
+    background-color:rgb(45, 41, 42);
     height: 680px;
     position: relative;
 }
-.fullHeight{
+.fullHeight {
     height: 100%;
 }
 .container {
@@ -26,25 +28,24 @@ body{
     z-index: 5;
     width: 100%;
     height: 100px;
+
     // background-color: rgba(162, 96, 221,0.2);
 }
 ul.num {
     list-style: none;
     padding: 0;
-
     li {
         display: inline-block;
         position: absolute;
         width: 36px;
-
     }
 }
-.hide{
+.hide {
     display: none;
 }
-.pare{
+.pare {
     margin-right: 40px;
-    p{
+    p {
         text-align: center;
         font-family: 'Playfair Display';
         font-weight: bold;
@@ -53,14 +54,12 @@ ul.num {
         margin-top: 53%;
         text-transform: uppercase;
         transform: translate(0,0);
-
     }
 }
-
-.info{
+.info {
     text-align: center;
     font-family: 'Playfair Display';
-    font-weight:400;
+    font-weight: 400;
     font-size: 2.4em;
     position: absolute;
     bottom: -100%;
@@ -68,8 +67,8 @@ ul.num {
     transform: translate(-50%,0);
     color: #f1d3a9;
 }
-input[type=submit]{
-    background-color:#ff703f;
+input[type=submit] {
+    background-color: #ff703f;
     text-transform: uppercase;
     width: 100px;
     height: 50px;
@@ -80,7 +79,7 @@ input[type=submit]{
     bottom: -139px;
     font-family: 'Playfair Display';
 }
-.email{
+.email {
     width: 100%;
     height: 50px;
     position: absolute;
@@ -89,129 +88,111 @@ input[type=submit]{
     bottom: -120px;
     padding: 0;
     padding-left: 5px;
-
 }
-.icon{
+.icon {
     margin-top: 5%;
 }
 .tweet {
     display: block;
     width: 50px;
     height: 50px;
+
     // margin-top:6px;
     position: absolute;
     right: 0;
-     border: 2px solid transparent;
-     border-radius:100%;
+    border: 2px solid transparent;
+    border-radius: 100%;
     z-index: 400;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
     text-decoration: none;
-
 }
-
 svg.twitter {
-
-    display:block;
-    position:relative;
-    margin:-15px auto 0 auto;
-
-    top:50%;
-
+    display: block;
+    position: relative;
+    margin: -15px auto 0;
+    top: 50%;
 }
-    .tweet:hover, .tweet:active, .tweet:focus {
-
-        text-decoration: none;
-        outline: none;
-    }
-
-    .tweet:hover {
-        -moz-transform: rotate(-360deg) scale(1.1);
-         -ms-transform: rotate(-360deg) scale(1.1);
-         -o-transform: rotate(-360deg) scale(1.1);
-         -webkit-transform: rotate(-360deg) scale(1.1);
-          transform: rotate(-360deg) scale(1.1);
-        border: 2px solid #f1d3b9;
-        border-radius: 100%;
-
-        background-color: rgba(255,255,255,1);
-
-    }
-
+.tweet:hover,
+.tweet:active,
+.tweet:focus {
+    text-decoration: none;
+    outline: none;
+}
+.tweet:hover {
+    -moz-transform: rotate(-360deg) scale(1.1);
+    -ms-transform: rotate(-360deg) scale(1.1);
+    -o-transform: rotate(-360deg) scale(1.1);
+    -webkit-transform: rotate(-360deg) scale(1.1);
+    transform: rotate(-360deg) scale(1.1);
+    border: 2px solid #f1d3b9;
+    border-radius: 100%;
+    background-color: rgba(255,255,255,1);
+}
 .tweet:hover path {
-
-    fill:#f1d3a9;
-
+    fill: #f1d3a9;
 }
 /*-----------------logo--------------*/
-        .card {
-
-            cursor:pointer;
-            position:absolute;
-            top:10%;
-            padding-left: 15px;
-            img{
-                padding-left: 15px;
-            }
-        }
-
-        .back, .front {
-            position: absolute;
-            width: 142px;
-            height: 55px;
-            -moz-transition: all .8s;
-            -o-transition: all .8s;
-            -webkit-transition: all .8s;
-            transition: all .8s;
-        }
-
-.back {
-
-    background-image: url('../img/logo.png');
-    background-repeat: no-repeat;
-     background-size: contain;
+.card {
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    padding-left: 15px;
+    img {
+        padding-left: 15px;
+    }
 }
-
+.back,
 .front {
-    /*background-image: url('../img/fuse-logos_blue_gray.png');*/
-    background-image: url('../img/logo.png');
+    position: absolute;
+    width: 142px;
+    height: 55px;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.back {
+    background-image: url(../img/logo.png);
     background-repeat: no-repeat;
     background-size: contain;
-
+}
+.front {
+    /*background-image: url('../img/fuse-logos_blue_gray.png');*/
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-
-
-                    // Media query
-
+// Media query
 @media all and (max-width: 480px) {
-    body{
+    body {
         width: 100%;
+
         // height: 100%;
         position: fixed;
-        background-position: 60% 24%;
+        background-position: 60% 50%;
     }
-    .place{
-        top:34%;
+    .place {
+        top: 34%;
     }
-    .pare{
+    .pare {
         margin-right: 35px;
-        p{
+        p {
             margin-top: 120%;
             font-size: 0.8em;
             text-align: right;
             margin-left: 18%;
         }
     }
-
-    li{
-        img{
+    li {
+        img {
             transform: scale(0.4);
         }
     }
-    .info{
+    .info {
         font-size: 1.3em;
         position: absolute;
         left: 50%;
@@ -219,7 +200,7 @@ svg.twitter {
         bottom: -40%;
         padding-left: 11%;
     }
-    .email{
+    .email {
         width: 90%;
         position: absolute;
         padding: 0;
@@ -228,117 +209,135 @@ svg.twitter {
         transform: translate(-50%,0);
         text-align: center;
     }
-    input[type=submit]{
+    input[type=submit] {
         position: absolute;
         left: 54%;
         bottom: -130px;
         transform: translate(-50%,0);
     }
-    .tweet{
-        right:3%;
+    .tweet {
+        right: 3%;
     }
-    .col-md-6,.col-lg-6,.col-xs-6,.col-md-2,.col-lg-2,.col-xs-2{
+    .col-md-6,
+    .col-lg-6,
+    .col-xs-6,
+    .col-md-2,
+    .col-lg-2,
+    .col-xs-2 {
         padding: 0;
         padding-left: 0;
-        padding-right: 0px;
+        padding-right: 0;
     }
+}
 
- }
- // HTC
- @media all and (min-width: 361px) and (max-width:479px){
-        .pare{
-            p{
-                margin-top: 102%;
-            }
-        }
-        .email{
-            bottom: -80px;
-            left: 54%;
-        }
-        input[type=submit]{
-            bottom: -135px;
-        }
-      }
-
- @media all and (min-width: 460px) and (max-width:599px){
-     .pare{
-         p{
-             margin-top: 90%;
-             text-align: center;
-         }
-     }
-     img{
-         transform: scale(0.50) !important;
-     }
-     .first_num{
-         margin-left: 3%;
-     }
-     .info{
-         font-size: 2em;
-         bottom: -68%;
-     }
-     .email{
-         bottom: -110px;
-         left: 53%;
-     }
-     input[type=submit]{
-        //  left: 135px;
-         bottom: -172px;
-     }
- }
-
-@media all and (min-width:600px) and (max-width:767px){
+// HTC
+@media all and (min-width: 360px) and (max-width:479px) {
     body{
-        background-position: 60% 0%;
+        background-position:60% 59%;
+    }
+    .pare {
+        p {
+            margin-top: 102%;
+        }
+    }
+    .info{
+        bottom: -45%;
+    }
+    .email {
+        bottom: -90px;
+        left: 54%;
+    }
+    input[type=submit] {
+        bottom: -145px;
+    }
+}
+// Lumia
+@media all and (min-width: 460px) and (max-width:599px) {
+    body{
+        background-position: 60% 50%;
     }
     .place{
-        top:67%;
+        top: 48%;
     }
-    img{
+    .pare {
+        p {
+            margin-top: 90%;
+            text-align: center;
+        }
+    }
+    img {
+        transform: scale(0.50) !important;
+    }
+    .first_num {
+        margin-left: 3%;
+    }
+    .info {
+        font-size: 2em;
+        bottom: -68%;
+    }
+    .email {
+        bottom: -110px;
+        left: 53%;
+    }
+    input[type=submit] {
+
+        //  left: 135px;
+        bottom: -172px;
+    }
+}
+// Nexus
+@media all and (min-width:600px) and (max-width:767px) {
+    body {
+        background-position: 60% 0;
+    }
+    .place {
+        top: 67%;
+    }
+    img {
         transform: scale(0.55);
         margin-right: 20px;
     }
-    .first_num{
+    .first_num {
         margin-left: 2%;
     }
-    .pare{
-        p{
-        margin-top: 130%;
+    .pare {
+        p {
+            margin-top: 130%;
         }
     }
-    .sm_nexus{
+    .sm_nexus {
         width: 90%;
-        left:50.5%;
+        left: 50.5%;
         transform: translate(-50%,0);
     }
-    .email{
+    .email {
         bottom: -95px;
         text-align: center;
     }
-    input[type=submit]{
+    input[type=submit] {
         left: 53%;
         transform: translate(-50%,0);
         bottom: -150px;
     }
-    .tweet{
+    .tweet {
         right: 2%;
     }
 }
+// iPad
 @media all and (min-width:768px) and (max-width:1350px) {
-    body{
+    body {
         background-position: 60% 0;
     }
-    .place{
-        top:67%;
-        p{
+    .place {
+        top: 67%;
+        p {
             margin-top: 90%;
         }
-        img{
+        img {
             transform: scale(0.6);
         }
     }
-    .first_num{
+    .first_num {
         margin-left: 3%;
     }
-
 }

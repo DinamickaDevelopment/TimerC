@@ -5,8 +5,10 @@
 
 body {
   background: url(../img/bg-2.png) no-repeat;
+  background-attachment: fixed;
   overflow: hidden;
   background-position: 60% 40%;
+  background-color: #2d292a;
   height: 680px;
   position: relative; }
 
@@ -104,10 +106,12 @@ input[type=submit] {
 svg.twitter {
   display: block;
   position: relative;
-  margin: -15px auto 0 auto;
+  margin: -15px auto 0;
   top: 50%; }
 
-.tweet:hover, .tweet:active, .tweet:focus {
+.tweet:hover,
+.tweet:active,
+.tweet:focus {
   text-decoration: none;
   outline: none; }
 
@@ -133,23 +137,24 @@ svg.twitter {
   .card img {
     padding-left: 15px; }
 
-.back, .front {
+.back,
+.front {
   position: absolute;
   width: 142px;
   height: 55px;
-  -moz-transition: all .8s;
-  -o-transition: all .8s;
-  -webkit-transition: all .8s;
-  transition: all .8s; }
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s; }
 
 .back {
-  background-image: url("../img/logo.png");
+  background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-size: contain; }
 
 .front {
   /*background-image: url('../img/fuse-logos_blue_gray.png');*/
-  background-image: url("../img/logo.png");
+  background-image: url(../img/logo.png);
   background-repeat: no-repeat;
   background-size: contain; }
 
@@ -157,7 +162,7 @@ svg.twitter {
   body {
     width: 100%;
     position: fixed;
-    background-position: 60% 24%; }
+    background-position: 60% 50%; }
 
   .place {
     top: 34%; }
@@ -199,21 +204,38 @@ svg.twitter {
   .tweet {
     right: 3%; }
 
-  .col-md-6, .col-lg-6, .col-xs-6, .col-md-2, .col-lg-2, .col-xs-2 {
+  .col-md-6,
+  .col-lg-6,
+  .col-xs-6,
+  .col-md-2,
+  .col-lg-2,
+  .col-xs-2 {
     padding: 0;
     padding-left: 0;
-    padding-right: 0px; } }
-@media all and (min-width: 361px) and (max-width: 479px) {
+    padding-right: 0; } }
+@media all and (min-width: 360px) and (max-width: 479px) {
+  body {
+    background-position: 60% 59%; }
+
   .pare p {
     margin-top: 102%; }
 
+  .info {
+    bottom: -45%; }
+
   .email {
-    bottom: -80px;
+    bottom: -90px;
     left: 54%; }
 
   input[type=submit] {
-    bottom: -135px; } }
+    bottom: -145px; } }
 @media all and (min-width: 460px) and (max-width: 599px) {
+  body {
+    background-position: 60% 50%; }
+
+  .place {
+    top: 48%; }
+
   .pare p {
     margin-top: 90%;
     text-align: center; }
@@ -236,7 +258,7 @@ svg.twitter {
     bottom: -172px; } }
 @media all and (min-width: 600px) and (max-width: 767px) {
   body {
-    background-position: 60% 0%; }
+    background-position: 60% 0; }
 
   .place {
     top: 67%; }
