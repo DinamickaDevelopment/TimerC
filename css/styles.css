@@ -183,17 +183,19 @@ svg.twitter {
   .place {
     height: 70px; }
 
-  .first_num {
-    margin-left: -8%; }
-
   .pare {
     margin-right: 35px; }
     .pare p {
       margin-top: 80%;
       font-size: 0.8em;
-      margin-left: 7%;
+      margin-left: 9%;
       color: #eee;
       text-shadow: 0 0 5px #f1d3a9; }
+
+  .first_num {
+    margin-left: -8%; }
+    .first_num p {
+      padding-left: 24px; }
 
   li img {
     -webkit-transform: scale(0.4);
@@ -244,14 +246,16 @@ svg.twitter {
 
   .pare p {
     text-align: center;
-    padding: 0; }
+    padding-left: 18px; }
 
   .info {
     text-shadow: none;
     color: #f1d3a9; }
 
   .first_num {
-    margin-left: -5%; } }
+    margin-left: -5%; }
+    .first_num p {
+      padding-left: 26px; } }
 @media all and (min-width: 460px) and (max-width: 599px) {
   body {
     background-position: 70% 58%; }
@@ -260,6 +264,7 @@ svg.twitter {
     bottom: 100px; }
 
   .pare p {
+    margin-top: 75%;
     text-align: center; }
 
   img {
@@ -286,6 +291,9 @@ svg.twitter {
 
   .wrapper {
     bottom: 185px; }
+
+  p.first_d {
+    padding-left: 27px; }
 
   .pare p {
     margin-top: 100%; }
@@ -319,6 +327,9 @@ svg.twitter {
 
   .first_num {
     margin-left: 3%; }
+
+  p.sec_num {
+    padding-left: 23px; }
 
   .wrapper {
     bottom: 140px; } }

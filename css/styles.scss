@@ -236,17 +236,21 @@ svg.twitter {
     .place{
         height: 70px;
     }
-    .first_num{
-        margin-left: -8%;
-    }
+
     .pare {
         margin-right: 35px;
         p {
             margin-top: 80%;
             font-size: 0.8em;
-            margin-left: 7%;
+            margin-left: 9%;
             color: $color_second;
             text-shadow: 0 0 5px $color_main;
+        }
+    }
+    .first_num{
+        margin-left: -8%;
+        p{
+            padding-left: 24px;
         }
     }
     li {
@@ -315,7 +319,7 @@ svg.twitter {
         p {
             // margin-top: 102%;
             text-align: center;
-            padding: 0;
+            padding-left: 18px;
         }
     }
     .info{
@@ -328,6 +332,9 @@ svg.twitter {
     }
     .first_num {
         margin-left: -5%;
+        p{
+            padding-left: 26px;
+        }
     }
 }
 // // Lumia
@@ -340,8 +347,9 @@ svg.twitter {
     }
 
     .pare {
+        // margin-top: 80%;
         p {
-            // margin-top: 80%;
+            margin-top: 75%;
             text-align: center;
         }
     }
@@ -377,8 +385,8 @@ svg.twitter {
     .wrapper{
         bottom: 185px;
     }
-    .first_num {
-        // margin-left: 2%;
+    p.first_d{
+        padding-left: 27px;
     }
     .pare {
         p {
@@ -425,6 +433,9 @@ svg.twitter {
     }
     .first_num {
         margin-left: 3%;
+    }
+    p.sec_num{
+        padding-left: 23px;
     }
     .wrapper{
         bottom: 140px;
