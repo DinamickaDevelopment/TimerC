@@ -84,10 +84,10 @@ input[type=submit] {
   display: block;
   width: 50px;
   height: 50px;
-  margin-top: 9px;
+  margin-top: 7px;
   z-index: 400;
   position: absolute;
-  right: 0;
+  right: 3px;
   border: 2px solid transparent;
   border-radius: 100%;
   -webkit-transition: all 1s ease;
@@ -120,8 +120,8 @@ svg.twitter {
   transform-style: preserve-3d;
   cursor: pointer;
   position: absolute;
-  left: 0;
-  top: 11px;
+  left: 3px;
+  top: 12px;
   z-index: 400; }
 
 .back, .front {
@@ -174,10 +174,10 @@ svg.twitter {
 @media all and (max-width: 480px) {
   body {
     width: 100%;
-    background-position: 60% 60%; }
+    background-position: 60% 62%; }
 
   .wrapper {
-    bottom: 5%;
+    bottom: 8%;
     margin-bottom: 0px; }
 
   .place {
@@ -226,9 +226,6 @@ svg.twitter {
     width: 85px;
     margin: auto; }
 
-  .tweet {
-    right: 3%; }
-
   .col-md-6,
   .col-lg-6,
   .col-xs-6,
@@ -237,22 +234,7 @@ svg.twitter {
   .col-xs-2 {
     padding: 0;
     padding-left: 0;
-    padding-right: 0; }
-
-  .navbar {
-    border: none; }
-
-  .card {
-    left: 5%;
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    margin-top: 4%; }
-
-  .tweet {
-    -webkit-transform: scale(0.8);
-    transform: scale(0.8);
-    right: 6%;
-    margin-top: 4%; } }
+    padding-right: 0; } }
 @media all and (min-width: 360px) and (max-width: 479px) {
   body {
     background-position: 65% 61%; }
@@ -317,9 +299,6 @@ svg.twitter {
   .clear {
     width: 85px;
     margin: auto; }
-
-  .tweet {
-    right: 2%; }
 
   .info {
     margin-bottom: 10px; } }
