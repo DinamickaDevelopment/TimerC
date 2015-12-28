@@ -194,7 +194,7 @@ svg.twitter {
   backface-visibility: hidden; }
 
 .navbar {
-  min-height: 65px !important;
+  min-height: 65px ;
   position: absolute;
   border-top: 2px solid #0d1116;
   bottom: 0;
@@ -447,6 +447,7 @@ ul.num {
 .spoon{display:none;}
 }
 
+
 @media (min-width: 450px) {
   form {
     width: 60%; }
@@ -487,7 +488,7 @@ ul.num {
     }
 }
 /* Extra Small Devices, Phones */
-@media (min-width: 768px) {
+@media (min-width: 768px)  {
   .main_table {
     height: 35%; }
 
@@ -508,8 +509,6 @@ ul.num {
     font-size: 1.2em;
     line-height: 30px;
  }
-
-
   form {
     width: 50%; }
 
@@ -542,7 +541,7 @@ ul.num {
     left: 4%;
 }
     .cards {
-        top: 35px;
+        top: 102px;
         left: 42%;
         display: block;
         -moz-transform: translateX(-50%);
@@ -672,4 +671,78 @@ ul.num {
 }
 }
 
-/*# sourceMappingURL=styles.css.map */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px)  and (orientation: landscape) {
+      .wood_back{
+          height: 25%;
+      }
+      .main_table{
+          height: 35%;
+          background-size: 120% 100%;
+      }
+      .cards{
+          background-size: 50%;
+          top:-27px;
+      }
+      .info{
+          font-size: 1.2em;
+          margin-bottom: 5px;
+      }
+      .email{
+          height: 20px;
+          font-size: 0.7em;
+      }
+      input[type="submit"]{
+          height: 20px;
+          font-size: 0.7em;
+      }
+      .back,.front{
+          background-size: 70%;
+      }
+      .twitter{
+          height: 15px;
+      }
+      .tweet{
+          height: 40px;
+          width: 40px;
+      }
+      .navbar-fixed-bottom{
+          /*border: none;*/
+          min-height: 50px;
+      }
+      svg.twitter {
+        display: block;
+        position: relative;
+        margin: -8px auto 0;
+        top: 50%;
+        height: 17px;
+    }
+
+
+      .tweet:hover {
+        -webkit-transform: rotate(-360deg) scale(1);
+        transform: rotate(-360deg) scale(1);
+        border: 1px solid #00aced;
+        border-radius: 100%;
+        background-color: white; }
+        form{
+            width: 50%;
+        }
+        .timer_width,.timer_label_width{
+            width: 50%;
+        }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */
+    .cards{
+        display: none;
+    }
+    .spoon{
+        top:50px;
+        right: -6%;
+    }
+}

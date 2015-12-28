@@ -1,0 +1,924 @@
+﻿
+@font-face {
+    font-family: 'AvenirLTStd-Medium';
+    src: url('../font/AvenirLTStd-Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'AvenirLTStd-Black';
+    src: url('../font/AvenirLTStd-Black.otf') format('opentype');
+}
+@font-face {
+    font-family: 'AvenirLTStd-Book';
+    src: url('../font/AvenirLTStd-Book.otf') format('opentype');
+}
+/*NEWnew*/
+
+body {
+    
+    background-repeat: no-repeat;
+    background-position: center -280px;
+    background-size: cover;
+    background-color:#060a0d;
+}
+
+.fullheight {
+    height: 100%;
+    position:relative;
+}
+
+.navbar {
+
+    min-height:65px!important;
+    border-top: 2px solid rgb(13,17,22);
+
+}
+
+
+
+/*----------------------tweet--------------------------*/
+
+.tweet {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin-top:6px;
+    
+    
+    position: absolute;
+    right: 0;
+       
+  
+
+     border: 2px solid transparent;
+     border-radius:100%;
+
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    text-decoration: none;
+   
+}
+
+svg.twitter {
+
+    display:block;
+    position:relative;
+    margin:-15px auto 0 auto;
+
+    top:50%;
+
+}
+
+
+
+    .tweet:hover, .tweet:active, .tweet:focus {
+    
+        text-decoration: none;
+        outline: none;
+    
+    } 
+
+    .tweet:hover {
+
+ 
+        -moz-transform: rotate(-360deg) scale(1.1);
+         -ms-transform: rotate(-360deg) scale(1.1);
+         -o-transform: rotate(-360deg) scale(1.1);
+         -webkit-transform: rotate(-360deg) scale(1.1);
+          transform: rotate(-360deg) scale(1.1);
+        border: 2px solid #00aced;
+        border-radius: 100%;
+   
+        background-color: rgba(255,255,255,1);
+
+    }
+
+.tweet:hover path {
+
+    fill:#00aced;
+
+}
+
+/*-----------------logo--------------*/
+        .card {
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d; 
+            cursor:pointer;
+            position:absolute;
+            left:0;
+        }
+
+        .back, .front {
+            position: absolute;
+            width: 142px;
+            height: 55px;
+            -moz-transition: all .8s;
+            -o-transition: all .8s;
+            -webkit-transition: all .8s;
+            transition: all .8s;
+        }
+
+.back {
+
+    background-image: url('../img/fuse-logos_blue_white.png');
+    background-repeat: no-repeat;
+     background-size: contain;
+}
+
+.front {
+    /*background-image: url('../img/fuse-logos_blue_gray.png');*/
+    background-image: url('../img/fuse-logos_blue_white_reverse.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -moz-transform: rotate3d(0,1,0, 180deg);
+    -ms-transform: rotate3d(0,1,0, 180deg);
+    -o-transform: rotate3d(0,1,0, 180deg);
+    -webkit-transform: rotate3d(0,1,0, 180deg);
+    transform: rotate3d(0,1,0, 180deg);
+}
+
+        .card:hover .back {
+            -moz-transform: rotate3d(0,1,0, 180deg);
+            -ms-transform: rotate3d(0,1,0, 180deg);
+            -o-transform: rotate3d(0,1,0, 180deg);
+            -webkit-transform: rotate3d(0,1,0, 180deg);
+            transform: rotate3d(0,1,0, 180deg);
+        }
+
+        .card:hover .front {
+            -moz-transform: rotate3d(0,1,0, 0deg);
+            -ms-transform: rotate3d(0,1,0, 0deg);
+            -o-transform: rotate3d(0,1,0, 0deg);
+            -webkit-transform: rotate3d(0,1,0, 0deg);
+            transform: rotate3d(0,1,0, 0deg);
+        }
+
+        .backface .back, .backface .front {
+            -moz-backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+
+/*counter*/
+#counter {
+    width: 390px;
+    height: 100px;
+    font-size: 14px;
+    color: white;
+}
+
+.countDays, .countHours, .countMinutes, .countSeconds {
+    float: left;
+    width: 70px;
+    height: 138px;
+    font-family: proximanova-light;
+}
+
+.points {
+    float: left;
+    width: 34px;
+    margin: 0;
+    margin-top: 32px;
+    font-family: proximanova-regular;
+    font-size: 3.143em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 31px;
+    text-shadow: none;
+}
+
+.position {
+    position: relative;
+    float: left;
+    width: 35px;
+    height: 72px;
+    margin: 8px 0 0 0;
+}
+
+.digit {
+    position: absolute;
+    font-size: 3.750em;
+    top: 0;
+    left: 0;
+}
+
+.boxName {
+    float: left;
+    width: 100%;
+    font-size: 0.750em;
+    letter-spacing: 3px;
+    color: white;
+    font-family: proximanova-bold;
+}
+
+.Hours {
+    margin-left: 5px;
+}
+
+.Seconds {
+    margin-left: 2px;
+}
+
+
+
+/*Main Background*/
+
+.slide-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.sliding-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #fff;
+}
+
+    .sliding-box > section {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+/*-----------------logo--------------*/
+.card {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    margin-top:11px;
+}
+
+.back, .front {
+    position: absolute;
+    width: 142px;
+    height: 40px;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    -webkit-transition: all .8s;
+    transition: all .8s;
+}
+
+.back {
+    background-image: url('../img/fuse-logos_blue_white.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.front {
+    /*background-image: url('../img/fuse-logos_blue_gray.png');*/
+    background-image: url('../img/fuse-logos_blue_white_reverse.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    -moz-transform: rotate3d(0,1,0, 180deg);
+    -ms-transform: rotate3d(0,1,0, 180deg);
+    -o-transform: rotate3d(0,1,0, 180deg);
+    -webkit-transform: rotate3d(0,1,0, 180deg);
+    transform: rotate3d(0,1,0, 180deg);
+}
+
+.card:hover .back {
+    -moz-transform: rotate3d(0,1,0, 180deg);
+    -ms-transform: rotate3d(0,1,0, 180deg);
+    -o-transform: rotate3d(0,1,0, 180deg);
+    -webkit-transform: rotate3d(0,1,0, 180deg);
+    transform: rotate3d(0,1,0, 180deg);
+}
+
+.card:hover .front {
+    -moz-transform: rotate3d(0,1,0, 0deg);
+    -ms-transform: rotate3d(0,1,0, 0deg);
+    -o-transform: rotate3d(0,1,0, 0deg);
+    -webkit-transform: rotate3d(0,1,0, 0deg);
+    transform: rotate3d(0,1,0, 0deg);
+}
+
+.backface .back, .backface .front {
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/
+
+div.form_cover {
+    
+}
+
+.social {
+    position: relative;
+}
+
+
+
+
+.tagline {
+    color: white;
+    font-size: 2.6em;
+    text-align: left;
+    clear: both;
+    font-family:AvenirLTStd-Book;
+    margin-bottom:10px;
+}
+
+.soon {
+    color: white;
+    font-family: proximanova-light;
+    font-size: 1.25em;
+    clear: both;
+    text-transform: uppercase;
+}
+/*mailChimp*/
+.first_Line {
+    font-family: proximanova-semibold;
+}
+
+.second_Line {
+    font-family: proximanovacond-light;
+}
+
+.countDays .position:first-child span {
+    margin-left: 0;
+}
+/*Begin MailChimp Signup Form*/
+#mc_embed_signup {
+    clear: left;
+    font-family: proximanova-bold;
+    font-weight: 100;
+    width: 100%;
+
+}
+
+    #mc_embed_signup input::-webkit-input-placeholder {
+        color: #000;
+        font-family:AvenirLTStd-Medium;
+        font-size:16px;
+        height:10px;
+    }
+
+    #mc_embed_signup input::-moz-placeholder {
+        color: #000;
+        font-family:AvenirLTStd-Medium;
+        font-size:16px;
+        height:10px;
+    }
+    /* firefox 19+ */
+    #mc_embed_signup input:-ms-input-placeholder {
+        color: #000;
+        font-family:AvenirLTStd-Medium;
+        font-size:16px;
+        height:10px;
+    }
+    /* ie */
+    #mc_embed_signup input:-moz-placeholder {
+         color: #000;
+        font-family: proximanova-semibold;
+        font-family:AvenirLTStd-Medium;
+            font-size:16px;
+            height:10px;
+    }
+
+    .form__SubmitCover{
+
+        padding-left:0!important;
+
+    }
+
+div.clear input#mc-embedded-subscribe {
+    background-color: #0091c7;
+
+}
+
+#mc_embed_signup .mc-field-group input {
+    border-radius: 11px;
+    width: 100%;
+    outline:none;
+    display: block;
+    /*line-height: 0.95;*/
+    height: 47px;
+    padding: 8px 30px;
+    text-indent: 2%;
+    border: 4px solid #0091c7;
+    background-color: white;
+    -webkit-appearance: none;
+}
+
+#mc_embed_signup input:focus {
+    border-color: #0091c7 !important;
+outline-offset:-10px;
+}
+
+#mc_embed_signup .button {
+    width: 110px !important;
+    padding: 0 !important;
+    clear: both;
+    background-color: #aaa;
+    border: 0 none;
+    border-radius: 11px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 47px;
+    line-height: 31px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: top;
+    white-space: nowrap;
+    font-family:AvenirLTStd-Black;
+
+  
+    /*margin-left: -48px;*/
+}
+
+div.clear input#mc-embedded-subscribe:hover {
+        color: #0091c7;
+    background-color:white;
+
+}
+
+#mc_embed_signup_scroll h2 {
+    color: white;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
+
+.err {
+    border: 2px solid #FF2E2E !important;
+    color: #FF2E2E;
+}
+/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+html, body, .fullheight {
+    height: 100%;
+}
+/*Modul window classes*/
+#Maillayer {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(5,9,12,0.9);
+    z-index: 50;
+}
+
+.MSG-box {
+    width: 100%;
+    height: 278px;
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    position: relative;
+    top: 50%;
+    margin-top: -139px;
+}
+
+#MSG, #MSGtitle {
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#MSGtitle {
+    font-size: 3.571em; /*50px*/
+    font-family: proximanova-regular;
+    margin-bottom: 40px;
+}
+
+#MSG {
+    font-size: 1.714em; /*24px*/
+    font-family: proximanova-light;
+    font-weight: 100;
+    line-height: 36px;
+}
+
+
+
+#MSGbtn {
+    width: 170px;
+    height: 45px;
+    font-family: proximanova-bold;
+    color: white;
+    background-color: #0091c7;
+    display: block;
+    margin: 50px auto 0;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+
+.congratulation_button_text {
+    font-size: 14px;
+    line-height: 42px;
+    letter-spacing: 3px;
+}
+
+div.countDays span.Days {
+    margin-left: 0;
+    display: inline-block;
+    height: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+.progressbarCover {
+    position: relative;
+    height: 20px;
+}
+
+    .progressbarCover .progressbarCircle_for_timer {
+        height: 20px !important;
+        width: 20px !important;
+        float: left !important;
+        border-radius: 100% !important;
+        position: absolute;
+        top: -5px;
+        z-index: 10;
+    }
+
+        .progressbarCover .progressbarCircle_for_timer .ui-progressbar-value {
+            border: 0 solid white;
+            border-radius: 0;
+            margin: 0;
+        }
+
+#progressbarCircleRight {
+    right: 0;
+}
+
+    #progressbarCircleRight .wholeCircle {
+        background-color: #1197c8;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 15;
+    }
+
+#progressbarCircleLeft {
+    left: 0;
+}
+
+    #progressbarCircleLeft .wholeCircle {
+        background-color: #1197c8;
+        width: 10px;
+        height: 10px;
+        border-radius: 100%;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        z-index: 15;
+    }
+
+.progressbarCover .progressbar_for_timer {
+    height: 4px;
+    overflow: visible;
+    border-radius: 0 !important;
+    position: relative;
+    z-index: 5;
+    margin: 0 auto;
+}
+
+    .progressbarCover .progressbar_for_timer .ui-progressbar-value {
+        border: 0 solid #2bde73;
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin: 0;
+    }
+
+
+
+
+.progressbarCover .ui-widget-content {
+    background: #605959;
+    border: 0 solid transparent;
+    /*border-top-right-radius:10px !important;
+    border-bottom-right-radius:10px !important;*/
+}
+
+.progressbarCover .ui-widget-header {
+    background: #2bde73;
+}
+
+@media(min-width:320px) {
+
+    body {
+    background-image:url(../img/Timer_B_Background.jpg);
+    background-position: center;
+    }
+
+    #MSGtitle {
+        font-size: 2.5em;
+    }
+
+    #MSG {
+        font-size: 1.3em;
+    }
+
+    .navbar-nav {
+    margin:0;
+    }
+
+    .navbar-header {
+    float:left;
+    }
+
+    div.timer_cover {
+        height: auto !important;
+        padding-left: 0;
+        padding: 10px 0;
+    }
+
+    .card {
+     left:10px;
+    }
+
+    .tweet {
+       right:10px;
+    }
+
+
+    div.form_cover {
+        position:absolute;
+        bottom:75px;
+    }
+
+    .mobcenter {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #mc_embed_signup {
+        margin: 0 0 10px 0;
+    }
+
+        #mc_embed_signup .button {
+            display: block;
+            margin: auto;
+        }
+    /*counter*/
+    #counter {
+        width: 218px;
+        font-size: 7px;
+        margin: 0 auto;
+    }
+
+    .countDays, .countHours, .countMinutes, .countSeconds {
+        width: 40px;
+        height: 62px;
+    }
+
+    .points {
+        width: 19px;
+        margin-top: 13px;
+    }
+
+    .position {
+        width: 20px;
+        height: 40px;
+    }
+
+    .countDays .position:first-child span {
+        margin-left: 0;
+    }
+    /*div.countDays span.Days {margin-left:11px;}*/
+    /*counter -end*/
+    .navbar-brand_logo {
+        height: 65px;
+        padding: 12px 0 !important;
+    }
+    /*.pading-63-20{padding:0 20px}*/
+    .tagline {
+        text-align: center;
+        font-size:1.2em;
+    }
+
+    #mc_embed_signup_scroll h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .progressbarCover {
+        width: 240px;
+        margin-top: 0;
+        margin: auto;
+    }
+
+        .progressbarCover .progressbar_for_timer {
+            width: 210px;
+        }
+
+        .flip-clock-wrapper {
+         
+            display:table;
+            margin: 0 auto;      
+                      
+        }
+ 
+    
+}
+
+@media screen and (max-width: 550px) and (min-width: 320px) {
+
+        .flip-clock-wrapper {
+         
+             width:300px !important;
+             padding-left:10px          
+                      
+        }
+
+    #mc_embed_signup .mc-field-group input {
+    text-align:center;
+    }
+
+     body {
+             
+            
+            background-position: center 0;
+    
+            }
+
+}
+
+/*@media(min-width: 321px) and (max-width: 359px) {
+
+          .flip-clock-wrapper {
+          width:290px !important;
+         }
+}*/
+
+/*@media  (min-width: 360px) and (max-width: 459px)   {
+
+        .flip-clock-wrapper {
+          width:76% !important;
+         }
+        
+}
+
+
+@media (min-width: 460px) and (max-width: 550px) {
+
+        .flip-clock-wrapper {
+          width:76% !important;
+}
+
+}*/
+
+
+
+
+@media(min-width:768px) {
+    
+    body {
+          background-position: center;
+          background-image:url(../img/bg5.png);
+    }
+    
+    .mobcenter {
+        margin: 0 auto;
+        width: 65%;
+    }
+    /*counter*/
+    #counter {
+        width: 390px;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .countDays, .countHours, .countMinutes, .countSeconds {
+        width: 70px;
+        height: 138px;
+    }
+
+    .points {
+        width: 34px;
+        margin-top: 32px;
+    }
+
+    .position {
+        width: 35px;
+        height: 72px;
+    }
+
+    .countDays .position:first-child span {
+        margin-left: 0;
+    }
+
+
+
+    #mc_embed_signup {
+        margin: 20px 0;
+    }
+
+    #mc_embed_signup_scroll h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #mc_embed_signup .button {
+        display: block;
+        /*margin-left: 6%;*/
+    }
+
+    .progressbarCover {
+        width: 380px;
+        margin: 0;
+        margin-top: 53px;
+    }
+
+        .progressbarCover .progressbar_for_timer {
+            width: 380px;
+        }
+
+       div.form_cover {
+
+        position:absolute;        
+        bottom:100px;
+
+    }
+
+}
+
+@media(min-width:993px) {
+
+    body {
+     background-image: url('../img/bg5.png');
+    background-position:center -280px;
+    }
+
+    
+
+    #MSGtitle {
+        font-size: 3.571em; /*50px*/
+    }
+
+    #MSG {
+        font-size: 1.714em; /*24px*/
+    }
+
+    div.timer_cover {
+        /*height: 65% !important;*/
+
+    height: 9% !important;
+    padding: 30px 0 0 45px;
+    float: right;
+
+
+    }
+
+    .tagline 
+        {
+         text-align: center;
+         font-size:2.129em;
+        }
+
+    div.form_cover {
+                
+        bottom:60px;
+        /*min-height:100%;*/
+        /*background-color:rgba(33,33,33,0.93);*/
+    }
+
+    .mobcenter {
+        margin: 0;
+     
+    }
+
+    #mc_embed_signup {
+    
+        width: 470px;
+        margin: 30px auto 0;
+    
+    }
+
+        #mc_embed_signup .button {
+            display: block;
+            margin: 0;
+            /*margin-left:22px;*/
+        }
+
+    .navbar-brand_logo {
+        height: 120px;
+    }
+
+    #mc_embed_signup_scroll h2 {
+        font-size: 20px;
+        text-align: left;
+        margin-bottom: 20px !important;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 31px;
+    }
+       
+}
+
+
