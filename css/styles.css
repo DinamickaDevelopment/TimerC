@@ -523,9 +523,7 @@ ul.num {
     height: 50px;
  }
 
-  #timer {
-    /*bottom: -72%;*/
-}
+  
     .padd_L{
         padding: 0;
     }
@@ -745,4 +743,14 @@ and (-webkit-min-device-pixel-ratio: 1)  { /* STYLES GO HERE */
         top:50px;
         right: -6%;
     }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation:portrait)
+{
+   .wood_back{
+       height: 20%;
+   }
+   .cards{
+       background-size: 45%;
+       top:-30px;
+   }
 }
