@@ -176,7 +176,7 @@
 
 
     }
-    $('#timer').countdown('2016/1/1', function(event) {
+    $('#timer').countdown('2016/03/08', function(event) {
         // timeUpSec(event);
         showStart(event);
         check(event);
